@@ -1,0 +1,7 @@
+---
+
+# for packages we assume these to be handled via ohter services (e.g. libsss_idmap via sssd-role)
+
+- name: idmapd confing
+  template: src=idmapd.conf.j2 dest=/etc/idmapd.conf owner=root group=root mode=0644
+
