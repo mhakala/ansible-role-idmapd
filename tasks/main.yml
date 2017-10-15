@@ -1,6 +1,6 @@
 ---
 # tasks file for ansible-role-idmapd
 
-- include: redhat.yml
+- include_tasks: redhat.yml
   when: idmapd_enabled and ansible_os_family == "RedHat"
 
